@@ -684,6 +684,7 @@ GameObject:
   - component: {fileID: 766626529}
   - component: {fileID: 766626528}
   - component: {fileID: 766626527}
+  - component: {fileID: 766626531}
   m_Layer: 0
   m_Name: Player2RacketsQuad
   m_TagString: Untagged
@@ -791,6 +792,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 766626525}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &766626531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 766626525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1db79308a9ec8e04aa9b0c0156786148, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 100
+  ball: {fileID: 0}
 --- !u!1 &813889971
 GameObject:
   m_ObjectHideFlags: 0
@@ -1129,7 +1143,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 979757647}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 849625248}
@@ -1249,6 +1263,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4670577804048608, guid: 7e6fee8c22cd9df4896b9871a5671b42, type: 2}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090201109220776, guid: 7e6fee8c22cd9df4896b9871a5671b42, type: 2}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2349,6 +2367,7 @@ GameObject:
   - component: {fileID: 1887741184}
   - component: {fileID: 1887741183}
   - component: {fileID: 1887741182}
+  - component: {fileID: 1887741186}
   m_Layer: 0
   m_Name: Player1RacketsQuad
   m_TagString: Untagged
@@ -2456,6 +2475,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1887741180}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1887741186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1887741180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 499f9ea5f13501e43bfd9ac5c07d4ec7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 100
 --- !u!1 &2007991040
 GameObject:
   m_ObjectHideFlags: 0
